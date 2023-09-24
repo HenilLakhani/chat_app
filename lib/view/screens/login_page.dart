@@ -7,18 +7,22 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          ElevatedButton(
-            onPressed: () {
-              Get.offNamed('/home');
-            },
-            child: const Text("login"),
-          )
-        ],
+      body: Container(
+        child: Stack(
+          children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                TextFormField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                  ),
+                )
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

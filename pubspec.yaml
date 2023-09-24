@@ -40,11 +40,12 @@ dependencies:
   firebase_auth: any
   google_sign_in: any
   flutter_launcher_icons:
+  splash_screens_test:
 
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/image/img.png"
+  image_path: "assets/image/img.jpg"
 
 dev_dependencies:
   flutter_test:
